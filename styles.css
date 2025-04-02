@@ -1,0 +1,53 @@
+/* Custom styles for Dark World */
+:root {
+    --dw-red: #e50914;
+    --dw-dark: #141414;
+    --dw-gray: #333;
+    --dw-light-gray: #8c8c8c;
+}
+
+/* Override Tailwind's default transition timing */
+.transition {
+    transition: all 0.3s ease;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--dw-dark);
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--dw-red);
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #b2070f;
+}
+
+/* Custom focus styles */
+input:focus, button:focus {
+    outline: 2px solid var(--dw-red);
+    outline-offset: 2px;
+}
+
+/* Hero section text shadow */
+.hero h1, .hero p {
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .hero {
+        background-position: center center !important;
+    }
+    
+    .hero h1 {
+        font-size: 2.5rem;
+    }
+}
