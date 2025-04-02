@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dark World - Sign Up</title>
+    <link href="https://cdn.tailwindcss.com" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/2965/2965300.png" type="image/png">
+</head>
+<body class="bg-black text-white">
+    <header class="py-4 px-8">
+        <a href="index.html" class="text-red-600 text-3xl font-bold">DARK WORLD</a>
+    </header>
+
+    <main class="flex items-center justify-center min-h-screen">
+        <div class="bg-gray-900 bg-opacity-75 p-12 rounded max-w-md w-full">
+            <h2 class="text-3xl font-bold mb-8">Create your account</h2>
+            <form>
+                <div class="mb-4">
+                    <input type="text" placeholder="Name" class="w-full bg-gray-700 text-white px-4 py-3 rounded">
+                </div>
+                <div class="mb-4">
+                    <input type="email" placeholder="Email" class="w-full bg-gray-700 text-white px-4 py-3 rounded">
+                </div>
+                <div class="mb-6">
+                    <input type="password" placeholder="Password" class="w-full bg-gray-700 text-white px-4 py-3 rounded">
+                </div>
+                <div class="mb-6">
+                    <h3 class="text-xl font-semibold mb-4">Choose your plan:</h3>
+                    <div class="space-y-2">
+                        <div class="flex items-center">
+                            <input type="radio" id="basic" name="plan" class="mr-2" checked>
+                            <label for="basic">Basic - $9.99/month</label>
+                        </div>
+                        <div class="flex items-center">
+                            <input type="radio" id="standard" name="plan" class="mr-2">
+                            <label for="standard">Standard - $14.99/month</label>
+                        </div>
+                        <div class="flex items-center">
+                            <input type="radio" id="premium" name="plan" class="mr-2">
+                            <label for="premium">Premium - $19.99/month</label>
+                        </div>
+                    </div>
+                </div>
+                <button type="submit" class="w-full bg-red-600 hover:bg-red-700 text-white py-3 rounded font-semibold mb-4">
+                    Continue
+                </button>
+            </form>
+            <div class="mt-8">
+                <p class="text-gray-400">
+                    Already have an account? 
+                    <a href="signin.html" class="text-white hover:underline">Sign in now</a>.
+                </p>
+            </div>
+        </div>
+    </main>
+
+    <footer class="bg-black py-8 px-8 mt-8">
+        <div class="max-w-6xl mx-auto text-gray-400">
+            <p>Questions? Call 1-800-DARK-WORLD</p>
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-4 mt-4">
+                <div>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="hover:underline">FAQ</a></li>
+                        <li><a href="#" class="hover:underline">Privacy</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="hover:underline">Terms of Use</a></li>
+                        <li><a href="#" class="hover:underline">Cookie Preferences</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="mt-8">
+                <p>&copy; 2023 Dark World. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
